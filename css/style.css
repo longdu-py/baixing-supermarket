@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main-red: #d92121;
+    --main-yellow: #ffc107;
+    --dark: #222;
+    --light-gray: #f5f5f5;
+}
+body {
+    font-family: "Microsoft Yahei", sans-serif;
+    color: #333;
+    background-color: var(--light-gray);
+}
+/* 导航栏 */
+.navbar {
+    background-color: var(--main-red);
+}
+.navbar-brand {
+    color: #fff !important;
+    font-weight: bold;
+    font-size: 24px;
+}
+.nav-link {
+    color: #fff !important;
+}
+.nav-link:hover {
+    color: var(--main-yellow) !important;
+}
+/* 轮播区域 */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+/* 板块标题 */
+.section-title {
+    border-left: 5px solid var(--main-red);
+    padding-left: 12px;
+    margin: 40px 0 20px;
+}
+/* 商品卡片 */
+.goods-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px #ddd;
+    margin-bottom: 24px;
+}
+.goods-card img {
+    height: 200px;
+    object-fit: cover;
+}
+.price {
+    color: var(--main-red);
+    font-size: 20px;
+    font-weight: bold;
+}
+.old-price {
+    color: #999;
+    text-decoration: line-through;
+    font-size: 14px;
+    margin-left: 8px;
+}
+.add-cart-btn {
+    background: var(--main-red);
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+}
+.add-cart-btn:hover {
+    background: #b01717;
+}
+/* 门店卡片 */
+.store-card {
+    background: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+/* 底部页脚 */
+footer {
+    background: var(--dark);
+    color: #ccc;
+    padding: 40px 0;
+    margin-top: 60px;
+}
+footer h5 {
+    color: #fff;
+    margin-bottom: 16px;
+}
+footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+footer a:hover {
+    color: var(--main-yellow);
+}
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    margin-top: 30px;
+}
+/* 购物车徽章 */
+.cart-badge {
+    position: relative;
+}
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: yellow;
+    color: #000;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    font-size: 12px;
+    text-align: center;
+    line-height: 18px;
+}
